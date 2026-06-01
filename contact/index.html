@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Contact | Josh Madrid</title><link rel="shortcut icon" type="image/x-icon" href="https://cdn.prod.website-files.com/68599ae5116bfda9c17727ac/68a5e59200208ec4654ef8ec_32x32.png"><link href="https://fonts.googleapis.com/css2?family=Anton+SC:wght@400&family=Inconsolata:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="../css/webflow.css"><style>*{-webkit-font-smoothing:antialiased;}</style></head>
+<body class="body"><div class="page-wrapper">
+
+  <!-- LARGE NAV -->
+  <div class="show-tablet">
+    <header class="header">
+      <header class="navbar">
+        <div class="navbar-left"><a href="../index.html" class="navbar-logo w-inline-block"><img src="https://cdn.prod.website-files.com/68599ae5116bfda9c17727ac/6859c3fbfdb1374e108ee250_Frame%202.svg" loading="eager" alt="" height="Auto" class="navbar-logo-image"></a></div>
+        <nav class="navbar-menu">
+          <a href="../work/index.html" class="navbar-menu-item w-inline-block"><div>Work</div><div class="navbar-item-line"></div></a>
+          <a href="../motion-graphics/index.html" class="navbar-menu-item w-inline-block"><div>Motion Graphics &amp; Edits</div><div class="navbar-item-line"></div></a>
+          <a href="../about/index.html" class="navbar-menu-item w-inline-block"><div>About</div><div class="navbar-item-line"></div></a>
+        </nav>
+        <div class="navbar-right"><a href="index.html" class="button-text w-inline-block"><div class="button-text-inner"><div>Contact</div><div class="button-text-line"></div></div></a><a href="#" class="mobile-menu-toggle w-inline-block"><div class="mobile-menu-toggle-inner"><div class="menu-toggle-line top"></div><div class="menu-toggle-line bottom"></div></div></a></div>
+      </header>
+    </header>
+  </div>
+  <header class="header-small"><header class="navbar-small"><div class="navbar-small-left"><a href="../index.html" class="navbar-logo w-inline-block"><img loading="eager" alt="" src="https://cdn.prod.website-files.com/68599ae5116bfda9c17727ac/6859c37a82b3db989e45ff12_Frame%201.svg" class="navbar-logo-image"></a></div><div class="navbar-small-right"><nav class="navbar-small-menu"><a href="../work/index.html" class="navbar-menu-item w-inline-block"><div>Work</div><div class="navbar-item-line"></div></a><a href="../motion-graphics/index.html" class="navbar-menu-item w-inline-block"><div>Motion Graphics &amp; Edits</div><div class="navbar-item-line"></div></a><a href="../about/index.html" class="navbar-menu-item w-inline-block"><div>About</div><div class="navbar-item-line"></div></a></nav><a href="index.html" class="button-text w-inline-block"><div class="button-text-inner"><div>Contact</div><div class="button-text-line"></div></div></a></div></header></header>
+  <div class="mobile-menu" id="mobile-menu"><div class="mobile-menu-wrapper"><nav class="mobile-menu-nav"><a href="../work/index.html" class="mobile-menu-nav-item w-inline-block"><div class="menu-nav-item-text">Work</div></a><a href="../motion-graphics/index.html" class="mobile-menu-nav-item w-inline-block"><div class="menu-nav-item-text">Motion Graphics</div></a><a href="../about/index.html" class="mobile-menu-nav-item w-inline-block"><div class="menu-nav-item-text">About</div></a><a href="index.html" class="mobile-menu-nav-item w-inline-block"><div class="menu-nav-item-text">Contact</div></a></nav></div><button id="mobile-close" style="position:absolute;top:28px;right:28px;background:none;border:none;cursor:pointer;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button></div>
+
+  <main class="main-wrapper">
+    <section class="section-contact">
+      <!-- LEFT: IMAGE -->
+      <div class="contact-image-wrapper">
+        <img src="https://cdn.prod.website-files.com/68599ae5116bfda9c17727ac/68a600cc1554da670ffe8547_photo-1505356822725-08ad25f3ffe4.avif" alt="Contact Josh Madrid" style="width:100%;height:100vh;object-fit:cover;position:sticky;top:0;display:block;">
+      </div>
+
+      <!-- RIGHT: FORM -->
+      <div class="contact-right">
+        <div>
+          <div class="overflow-hidden" style="margin-bottom:3vw;">
+            <h1 style="font-family:var(--global--heading-font-family);font-size:12vw;font-weight:400;line-height:100%;text-transform:uppercase;">Let's<br>Talk</h1>
+          </div>
+          <div class="contact-form-wrapper">
+            <div class="form-wrapper w-form">
+              <form id="contact-form" novalidate>
+                <div class="form-field-wrapper">
+                  <label class="form-label">Name</label>
+                  <input class="form-input w-input" type="text" name="name" placeholder="Your name" required>
+                </div>
+                <div class="form-field-wrapper">
+                  <label class="form-label">Email</label>
+                  <input class="form-input w-input" type="email" name="email" placeholder="your@email.com" required>
+                </div>
+                <div class="form-field-wrapper">
+                  <label class="form-label">Message</label>
+                  <textarea class="form-input is-text-area w-input" name="message" placeholder="Tell me about your project..." rows="5" required></textarea>
+                </div>
+                <div style="margin-top:2rem;">
+                  <button type="submit" style="font-family:var(--global--body-font-family);font-size:1.25vw;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;background:var(--global-colors--background-primary);color:var(--global-colors--text-inverse);border:none;padding:1rem 2rem;cursor:pointer;transition:background 0.2s;">Send Message</button>
+                </div>
+                <div class="w-form-done form-message-success" id="form-success" style="margin-top:1rem;">Thank you! Your submission has been received!</div>
+                <div class="w-form-fail form-message-error" id="form-error" style="margin-top:1rem;">Oops! Something went wrong while submitting the form.</div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="footer-bottom"><div class="footer-nav"><div class="footer-column"><div style="font-family:var(--text-meta--font-family);font-size:18px;font-weight:500;line-height:130%;color:var(--global-colors--text-muted-inverse);">(Socials)</div><nav class="nav"><a href="https://www.linkedin.com/in/jmadridart/" target="_blank" rel="noopener" class="nav-item inverse w-inline-block"><div>Linkedin</div><div class="nav-item-line inverse"></div></a><a href="https://www.instagram.com/jmadridart/" target="_blank" rel="noopener" class="nav-item inverse w-inline-block"><div>Instagram</div><div class="nav-item-line inverse"></div></a><a href="https://jmadridphoto.mypixieset.com/" target="_blank" rel="noopener" class="nav-item inverse w-inline-block"><div>Photography</div><div class="nav-item-line inverse"></div></a></nav></div></div><div class="footer-bottom-grid"><div class="text-meta">JOSH MADRID 2026</div></div></div></footer>
+  <div class="toggle-color"><div class="toggle-color-dot"></div></div>
+  <div class="pageloader"><div class="overflow-hidden"><div class="pageloader-heading">JOSH MADRID PORTFOLIO</div></div></div>
+</div>
+<script src="../js/main.js"></script>
+<script>
+  // Form submit handler
+  document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const btn = this.querySelector('button[type="submit"]');
+    btn.textContent = 'Sending…';
+    btn.disabled = true;
+    // Wire to Formspree: uncomment and add your ID
+    // fetch('https://formspree.io/f/YOUR_FORM_ID', { method:'POST', body: new FormData(this), headers:{'Accept':'application/json'} })
+    //   .then(r => r.ok ? showSuccess() : showError()).catch(showError);
+    setTimeout(() => { // Remove this setTimeout when using real form service
+      document.getElementById('form-success').style.display = 'block';
+      this.reset(); btn.style.display = 'none';
+    }, 600);
+    function showSuccess() { document.getElementById('form-success').style.display = 'block'; }
+    function showError() { document.getElementById('form-error').style.display = 'block'; btn.textContent = 'Send Message'; btn.disabled = false; }
+  });
+</script>
+<style>
+  @media (max-width: 991px) {
+    .section-contact { display: flex !important; flex-direction: column !important; }
+    .contact-image-wrapper img { height: 75vw !important; position: static !important; }
+    .contact-right h1 { font-size: 18vw !important; }
+    button[type=submit] { font-size: 14px !important; }
+  }
+  @media (max-width: 767px) {
+    .contact-right h1 { font-size: 20vw !important; }
+  }
+</style>
+</body></html>

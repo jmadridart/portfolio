@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en" class="w-mod-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Josh Madrid | Portfolio</title>
+  <meta property="og:title" content="Josh Madrid | Portfolio">
+  <meta property="og:image" content="https://cdn.prod.website-files.com/68599ae5116bfda9c17727ac/68a5fa1ff04570aba2e66982_1755707884675-b082315c-a0ed-46b2-ba15-9c924b24993b_1.jpg">
+  <link rel="shortcut icon" type="image/x-icon" href="https://cdn.prod.website-files.com/68599ae5116bfda9c17727ac/68a5e59200208ec4654ef8ec_32x32.png">
+  <link rel="apple-touch-icon" href="https://cdn.prod.website-files.com/68599ae5116bfda9c17727ac/68a5e597752c649d77e406c2_256x256.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton+SC:wght@400&family=Inconsolata:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/webflow.css">
+  <style>
+    * { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+  </style>
+</head>
+<body class="body">
+
+<div class="page-wrapper">
+
+  <!-- ===== LARGE SCREEN HEADER ===== -->
+  <div class="show-tablet">
+    <header class="header">
+      <header class="navbar">
+        <div class="navbar-left">
+          <a href="index.html" class="navbar-logo w-inline-block">
+            <div class="light-mode">
+              <img src="https://cdn.prod.website-files.com/68599ae5116bfda9c17727ac/6859c3fbfdb1374e108ee250_Frame%202.svg" loading="eager" alt="" height="Auto" class="navbar-logo-image">
+            </div>
+            <div class="dark-mode">
+              <img src="https://cdn.prod.website-files.com/68599ae5116bfda9c17727ac/6859c37a82b3db989e45ff12_Frame%201.svg" loading="eager" alt="" height="Auto" class="navbar-logo-image">
+            </div>
+          </a>
+        </div>
+        <nav class="navbar-menu">
+          <a href="work/index.html" class="navbar-menu-item w-inline-block">
+            <div class="navbar-menu-item-text">Work</div>
+            <div class="navbar-item-line"></div>
+          </a>
+          <a href="motion-graphics/index.html" class="navbar-menu-item w-inline-block">
+            <div class="navbar-menu-item-text">Motion Graphics &amp; Edits</div>
+            <div class="navbar-item-line"></div>
+          </a>
+          <a href="about/index.html" class="navbar-menu-item w-inline-block">
+            <div class="navbar-menu-item-text">About</div>
+            <div class="navbar-item-line"></div>
+          </a>
+        </nav>
+        <div class="navbar-right">
+          <a href="contact/index.html" class="button-text w-inline-block">
+            <div class="button-text-inner">
+              <div class="button-text-text">Contact</div>
+              <div class="button-text-line"></div>
+            </div>
+          </a>
+          <a href="#" class="mobile-menu-toggle w-inline-block">
+            <div class="mobile-menu-toggle-inner">
+              <div class="menu-toggle-line top"></div>
+              <div class="menu-toggle-line bottom"></div>
+            </div>
+          </a>
+        </div>
+      </header>
+    </header>
+  </div>
+
+  <!-- ===== SMALL HEADER (absolute, for pages with hero images) ===== -->
+  <header class="header-small">
+    <header class="navbar-small">
+      <div class="navbar-small-left">
+        <a href="index.html" class="navbar-logo w-inline-block">
+          <img loading="eager" height="Auto" alt="" src="https://cdn.prod.website-files.com/68599ae5116bfda9c17727ac/6859c37a82b3db989e45ff12_Frame%201.svg" class="navbar-logo-image">
+        </a>
+      </div>
+      <div class="navbar-small-right">
+        <nav class="navbar-small-menu">
+          <a href="work/index.html" class="navbar-menu-item w-inline-block">
+            <div class="navbar-menu-item-text">Work</div>
+            <div class="navbar-item-line"></div>
+          </a>
+          <a href="motion-graphics/index.html" class="navbar-menu-item w-inline-block">
+            <div class="navbar-menu-item-text">Motion Graphics &amp; Edits</div>
+            <div class="navbar-item-line"></div>
+          </a>
+          <a href="about/index.html" class="navbar-menu-item w-inline-block">
+            <div class="navbar-menu-item-text">About</div>
+            <div class="navbar-item-line"></div>
+          </a>
+        </nav>
+        <a href="contact/index.html" class="button-text w-inline-block">
+          <div class="button-text-inner">
+            <div class="button-text-text">Contact</div>
+            <div class="button-text-line"></div>
+          </div>
+        </a>
+      </div>
+    </header>
+  </header>
+
+  <!-- ===== MOBILE MENU ===== -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-wrapper">
+      <nav class="mobile-menu-nav">
+        <a href="work/index.html" class="mobile-menu-nav-item w-inline-block">
+          <div class="menu-nav-item-text">Work</div>
+        </a>
+        <a href="motion-graphics/index.html" class="mobile-menu-nav-item w-inline-block">
+          <div class="menu-nav-item-text">Motion Graphics</div>
+        </a>
+        <a href="about/index.html" class="mobile-menu-nav-item w-inline-block">
+          <div class="menu-nav-item-text">About</div>
+        </a>
+        <a href="contact/index.html" class="mobile-menu-nav-item w-inline-block">
+          <div class="menu-nav-item-text">Contact</div>
+        </a>
+      </nav>
+    </div>
+    <button id="mobile-close" style="position:absolute;top:28px;right:28px;background:none;border:none;cursor:pointer;width:30px;height:30px;display:flex;align-items:center;justify-content:center;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+  </div>
+
+  <!-- ===== MAIN ===== -->
+  <main class="main-wrapper">
+
+    <!-- HOME HERO -->
+    <section class="section-home-hero">
+      <div class="home-hero-grid">
+        <img class="home-hero-image" src="https://cdn.prod.website-files.com/68599ae5116bfda9c17727ac/6859b9b0230e9d38a4401715_1.jpg"
+          width="Auto" height="Auto" alt="DC shoes"
+          srcset="https://cdn.prod.website-files.com/68599ae5116bfda9c17727ac/6859b9b0230e9d38a4401715_1-p-500.jpg 500w, https://cdn.prod.website-files.com/68599ae5116bfda9c17727ac/6859b9b0230e9d38a4401715_1-p-800.jpg 800w, https://cdn.prod.website-files.com/68599ae5116bfda9c17727ac/6859b9b0230e9d38a4401715_1.jpg 1280w"
+          sizes="100vw" loading="lazy">
+
+        <div class="home-hero-right">
+          <div class="home-hero-right-top">
+            <div class="margin-bottom margin-large">
+              <div class="overflow-hidden">
+                <h1 class="heading-style-large">josh</h1>
+              </div>
+              <div class="overflow-hidden">
+                <h1 class="heading-style-large">madrid</h1>
+              </div>
+            </div>
+            <div>
+              <div class="max-width-large">
+                <p class="heading-alt-h2">Where creativity meets strategy to shape brands and create memorable experiences.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="home-hero-right-bottom">
+            <div class="margin-bottom margin-medium">
+              <div class="text-meta text-color-muted">(About Me)</div>
+            </div>
+            <div class="margin-bottom margin-medium">
+              <div class="margin-bottom margin-tiny">
+                <div class="overflow-hidden">
+                  <h2 class="heading-style-h2"><strong>Crafting</strong></h2>
+                </div>
+              </div>
+              <div class="margin-bottom margin-tiny">
+                <div class="overflow-hidden">
+                  <h2 class="heading-style-h2"><strong>Brands</strong></h2>
+                </div>
+              </div>
+              <div class="margin-bottom margin-tiny">
+                <div class="overflow-hidden">
+                  <h2 class="heading-style-h2"><strong>that</strong></h2>
+                </div>
+              </div>
+              <div class="overflow-hidden">
+                <h2 class="heading-style-h2"><strong>drive impact</strong></h2>
+              </div>
+            </div>
+            <div class="margin-bottom margin-xhuge">
+              <div class="max-width-large">
+                <p class="text-color-muted">Art Director / Senior Brand Designer with 10+ years of experience building and evolving brand identities across digital, print, eCommerce, product, and lifestyle platforms. Experienced leading creative initiatives from concept to execution across campaigns, UX/UI, packaging, web, social, motion, and integrated marketing systems.<br><br>
+                Skilled in Adobe Creative Suite, Figma, motion graphics, and photography direction, with a strong foundation in visual storytelling, typography, color, and responsive design. Known for balancing high-level creative thinking with hands-on execution while collaborating closely with marketing, product, UX, and leadership teams.<br><br>
+                My approach combines strategic thinking with practical execution — creating thoughtful, performance-driven design systems and visual experiences that elevate brands, engage audiences, and support measurable business goals.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOME PROJECTS -->
+    <section class="section-home-projects">
+      <div class="section-top muted">
+        <div class="section-top-heading">
+          <div class="text-meta text-color-muted">(Selected Work)</div>
+          <div class="text-meta text-color-muted">(01)</div>
+        </div>
+        <div>
+          <div class="margin-bottom margin-xsmall">
+            <div class="overflow-hidden">
+              <h2 class="heading-style-xxlarge">WORK</h2>
+            </div>
+          </div>
+          <div class="max-width-huge">
+            <p class="heading-alt-small">See how I bring bold ideas to life through creative and impactful design.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="home-projects-grid">
+
+        <!-- DC SHOES -->
+        <div class="project-preview">
+          <a href="work/dc-shoes.html" class="project-preview-image-wrapper w-inline-block">
+            <div class="view-button-wrapper">
+              <div class="view-button">
+                <div class="view-button-icon w-embed">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M198,64V168a6,6,0,0,1-12,0V78.48L68.24,196.24a6,6,0,0,1-8.48-8.48L177.52,70H88a6,6,0,0,1,0-12H192A6,6,0,0,1,198,64Z"></path></svg>
+                </div>
+              </div>
+            </div>
+            <img src="https://cdn.prod.website-files.com/68599ae5116bfda9c177282c/6a020dc9499758a6dfe35921_DC.jpg" loading="lazy" alt="DC SHOES"
+              srcset="https://cdn.prod.website-files.com/68599ae5116bfda9c177282c/6a020dc9499758a6dfe35921_DC-p-500.jpg 500w, https://cdn.prod.website-files.com/68599ae5116bfda9c177282c/6a020dc9499758a6dfe35921_DC-p-800.jpg 800w, https://cdn.prod.website-files.com/68599ae5116bfda9c177282c/6a020dc9499758a6dfe35921_DC-p-1080.jpg 1080w, https://cdn.prod.website-files.com/68599ae5116bfda9c177282c/6a020dc9499758a6dfe35921_DC.jpg 1800w"
+              sizes="100vw" class="image-cover-parallax">
+          </a>
+          <a href="work/dc-shoes.html" class="project-preview-content w-inline-block">
+            <h2 class="heading-alt-h4">DC SHOES</h2>
+            <div class="text-gap">
+              <div class="text-meta text-color-muted">(</div>
+              <div class="text-meta text-color-muted">2026</div>
+              <div class="text-meta text-color-muted">)</div>
+            </div>
+          </a>
+        </div>
+
+        <!-- MELIN -->
+        <div class="project-preview">
+          <a href="work/melin.html" class="project-preview-image-wrapper w-inline-block">
+            <div class="view-button-wrapper">
+              <div class="view-button">
+                <div class="view-button-icon w-embed">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M198,64V168a6,6,0,0,1-12,0V78.48L68.24,196.24a6,6,0,0,1-8.48-8.48L177.52,70H88a6,6,0,0,1,0-12H192A6,6,0,0,1,198,64Z"></path></svg>
+                </div>
+              </div>
+            </div>
+            <img src="https://cdn.prod.website-files.com/68599ae5116bfda9c177282c/6a020db2ac28537832b33fba_MELIN.jpg" loading="lazy" alt="MELIN"
+              srcset="https://cdn.prod.website-files.com/68599ae5116bfda9c177282c/6a020db2ac28537832b33fba_MELIN-p-500.jpg 500w, https://cdn.prod.website-files.com/68599ae5116bfda9c177282c/6a020db2ac28537832b33fba_MELIN-p-800.jpg 800w, https://cdn.prod.website-files.com/68599ae5116bfda9c177282c/6a020db2ac28537832b33fba_MELIN-p-1080.jpg 1080w, https://cdn.prod.website-files.com/68599ae5116bfda9c177282c/6a020db2ac28537832b33fba_MELIN.jpg 1800w"
+              sizes="100vw" class="image-cover-parallax">
+          </a>
+          <a href="work/melin.html" class="project-preview-content w-inline-block">
+            <h2 class="heading-alt-h4">MELIN</h2>
+            <div class="text-gap">
+              <div class="text-meta text-color-muted">(</div>
+              <div class="text-meta text-color-muted">2026</div>
+              <div class="text-meta text-color-muted">)</div>
+            </div>
+          </a>
+        </div>
+
+        <!-- POLARPRO -->
+        <div class="project-preview">
+          <a href="work/polarpro.html" class="project-preview-image-wrapper w-inline-block">
+            <div class="view-button-wrapper">
+              <div class="view-button">
+                <div class="view-button-icon w-embed">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M198,64V168a6,6,0,0,1-12,0V78.48L68.24,196.24a6,6,0,0,1-8.48-8.48L177.52,70H88a6,6,0,0,1,0-12H192A6,6,0,0,1,198,64Z"></path></svg>
+                </div>
+              </div>
+            </div>
+            <img src="https://cdn.prod.website-files.com/68599ae5116bfda9c177282c/6a020dbf2b169498c1ba8e8c_POLARPRO.jpg" loading="lazy" alt="POLARPRO"
+              srcset="https://cdn.prod.website-files.com/68599ae5116bfda9c177282c/6a020dbf2b169498c1ba8e8c_POLARPRO-p-500.jpg 500w, https://cdn.prod.website-files.com/68599ae5116bfda9c177282c/6a020dbf2b169498c1ba8e8c_POLARPRO-p-800.jpg 800w, https://cdn.prod.website-files.com/68599ae5116bfda9c177282c/6a020dbf2b169498c1ba8e8c_POLARPRO-p-1080.jpg 1080w, https://cdn.prod.website-files.com/68599ae5116bfda9c177282c/6a020dbf2b169498c1ba8e8c_POLARPRO.jpg 1800w"
+              sizes="100vw" class="image-cover-parallax">
+          </a>
+          <a href="work/polarpro.html" class="project-preview-content w-inline-block">
+            <h2 class="heading-alt-h4">POLARPRO</h2>
+            <div class="text-gap">
+              <div class="text-meta text-color-muted">(</div>
+              <div class="text-meta text-color-muted">2025</div>
+              <div class="text-meta text-color-muted">)</div>
+            </div>
+          </a>
+        </div>
+
+        <!-- TOSHIBA -->
+        <div class="project-preview">
+          <a href="work/toshiba.html" class="project-preview-image-wrapper w-inline-block">
+            <div class="view-button-wrapper">
+              <div class="view-button">
+                <div class="view-button-icon w-embed">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M198,64V168a6,6,0,0,1-12,0V78.48L68.24,196.24a6,6,0,0,1-8.48-8.48L177.52,70H88a6,6,0,0,1,0-12H192A6,6,0,0,1,198,64Z"></path></svg>
+                </div>
+              </div>
+            </div>
+            <img src="https://cdn.prod.website-files.com/68599ae5116bfda9c177282c/6a020dd7b2cfb8a919c0503f_TOSHIBA.jpg" loading="lazy" alt="TOSHIBA"
+              srcset="https://cdn.prod.website-files.com/68599ae5116bfda9c177282c/6a020dd7b2cfb8a919c0503f_TOSHIBA-p-500.jpg 500w, https://cdn.prod.website-files.com/68599ae5116bfda9c177282c/6a020dd7b2cfb8a919c0503f_TOSHIBA-p-800.jpg 800w, https://cdn.prod.website-files.com/68599ae5116bfda9c177282c/6a020dd7b2cfb8a919c0503f_TOSHIBA-p-1080.jpg 1080w, https://cdn.prod.website-files.com/68599ae5116bfda9c177282c/6a020dd7b2cfb8a919c0503f_TOSHIBA.jpg 1800w"
+              sizes="100vw" class="image-cover-parallax">
+          </a>
+          <a href="work/toshiba.html" class="project-preview-content w-inline-block">
+            <h2 class="heading-alt-h4">TOSHIBA</h2>
+            <div class="text-gap">
+              <div class="text-meta text-color-muted">(</div>
+              <div class="text-meta text-color-muted">2020</div>
+              <div class="text-meta text-color-muted">)</div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- HOME SERVICES / EXPERTISE -->
+    <section class="section-home-services">
+      <div class="section-top">
+        <div class="section-top-heading">
+          <div class="text-meta text-color-muted">(What I do)</div>
+          <div class="text-meta text-color-muted">(02)</div>
+        </div>
+        <div>
+          <div class="margin-bottom margin-xsmall">
+            <div class="overflow-hidden">
+              <h2 class="heading-style-xxlarge">Expertise</h2>
+            </div>
+          </div>
+          <div class="max-width-huge">
+            <p class="heading-alt-small">Explore my expertise in crafting engaging digital experiences that elevate your brand and enhance user engagement.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ART DIRECTION -->
+      <div class="home-services-item">
+        <div class="home-services-item-image">
+          <img src="https://cdn.prod.website-files.com/68599ae5116bfda9c17727ac/689e59fc53deee877dee38d9_2.jpg" loading="lazy" alt="Dead Pool Art Direction DC shoes" class="image-cover-parallax"
+            srcset="https://cdn.prod.website-files.com/68599ae5116bfda9c17727ac/689e59fc53deee877dee38d9_2-p-500.jpg 500w, https://cdn.prod.website-files.com/68599ae5116bfda9c17727ac/689e59fc53deee877dee38d9_2-p-800.jpg 800w, https://cdn.prod.website-files.com/68599ae5116bfda9c17727ac/689e59fc53deee877dee38d9_2-p-1080.jpg 1080w, https://cdn.prod.website-files.com/68599ae5116bfda9c17727ac/689e59fc53deee877dee38d9_2.jpg 1600w"
+            sizes="(max-width: 1600px) 100vw, 1600px">
+        </div>
+        <div class="home-services-item-content">
+          <div class="margin-bottom margin-large">
+            <div class="margin-bottom margin-tiny">
+              <div class="overflow-hidden">
+                <h3 class="heading-style-small">Art </h3>
+              </div>
+            </div>
+            <div class="margin-bottom margin-xsmall">
+              <div class="overflow-hidden">
+                <h3 class="heading-style-small">Direction</h3>
+              </div>
+            </div>
+            <div class="max-width-large">
+              <p class="heading-alt-h3">Direction that unifies creative assets and strengthens brand storytelling.</p>
+            </div>
+          </div>
+          <div>
+            <div class="margin-bottom margin-medium">
+              <div class="text-meta text-color-muted">(Branding Services)</div>
+            </div>
+            <div class="home-services-list">
+              <p class="heading-alt-h5">Brand Campaigns</p>
+              <p class="heading-alt-h5">Brand Positioning</p>
+              <p class="heading-alt-h5">Visual Identity Design</p>
+              <p class="heading-alt-h5">Photoshoots</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MOTION GRAPHICS -->
+      <div class="home-services-item odd">
+        <div class="home-services-item-content">
+          <div class="margin-bottom margin-large">
+            <div class="margin-bottom margin-tiny">
+              <div class="overflow-hidden">
+                <h3 class="heading-style-small">motion</h3>
+              </div>
+            </div>
+            <div class="margin-bottom margin-xsmall">
+              <div class="overflow-hidden">
+                <h3 class="heading-style-small">graphics</h3>
+              </div>
+            </div>
+            <div class="max-width-large">
+              <p class="heading-alt-h3">Seamless motion graphics that elevate campaigns and experiences.</p>
+            </div>
+          </div>
+          <div>
+            <div class="margin-bottom margin-medium">
+              <div class="text-meta text-color-muted">(Motion Graphic and Video Editing Services)</div>
+            </div>
+            <div class="home-services-list">
+              <p class="heading-alt-h5">After Effects</p>
+              <p class="heading-alt-h5">Premiere Pro</p>
+              <p class="heading-alt-h5">Blender</p>
+              <p class="heading-alt-h5">Cinema 4D</p>
+            </div>
+          </div>
+        </div>
+        <div class="home-services-item-image">
+          <img src="https://cdn.prod.website-files.com/68599ae5116bfda9c17727ac/68a494c53fc57fb50b584a79_Oracle_Arena.webp" loading="lazy" alt="Toshiba motion Graphics" class="image-cover-parallax"
+            srcset="https://cdn.prod.website-files.com/68599ae5116bfda9c17727ac/68a494c53fc57fb50b584a79_Oracle_Arena-p-500.webp 500w, https://cdn.prod.website-files.com/68599ae5116bfda9c17727ac/68a494c53fc57fb50b584a79_Oracle_Arena-p-800.webp 800w, https://cdn.prod.website-files.com/68599ae5116bfda9c17727ac/68a494c53fc57fb50b584a79_Oracle_Arena-p-1080.webp 1080w, https://cdn.prod.website-files.com/68599ae5116bfda9c17727ac/68a494c53fc57fb50b584a79_Oracle_Arena.webp 2500w"
+            sizes="(max-width: 2500px) 100vw, 2500px">
+        </div>
+      </div>
+
+      <!-- WEB DESIGN -->
+      <div class="home-services-item">
+        <div class="home-services-item-image">
+          <img src="https://cdn.prod.website-files.com/68599ae5116bfda9c17727ac/689a7d1fde73f35fba41bac7_68599ae5116bfda9c17729c0_service-02%201.png" loading="lazy" alt="Polarpro Web Design" class="image-cover-parallax"
+            srcset="https://cdn.prod.website-files.com/68599ae5116bfda9c17727ac/689a7d1fde73f35fba41bac7_68599ae5116bfda9c17729c0_service-02%201-p-500.png 500w, https://cdn.prod.website-files.com/68599ae5116bfda9c17727ac/689a7d1fde73f35fba41bac7_68599ae5116bfda9c17729c0_service-02%201-p-800.png 800w, https://cdn.prod.website-files.com/68599ae5116bfda9c17727ac/689a7d1fde73f35fba41bac7_68599ae5116bfda9c17729c0_service-02%201.png 1600w"
+            sizes="(max-width: 1600px) 100vw, 1600px">
+        </div>
+        <div class="home-services-item-content">
+          <div class="margin-bottom margin-large">
+            <div class="margin-bottom margin-tiny">
+              <div class="overflow-hidden">
+                <h3 class="heading-style-small">Web Design</h3>
+              </div>
+            </div>
+            <div class="max-width-large">
+              <p class="heading-alt-h3">User experience through intuitive and user-centered design solutions.</p>
+            </div>
+          </div>
+          <div>
+            <div class="margin-bottom margin-medium">
+              <div class="text-meta text-color-muted">(UI/UX Services)</div>
+            </div>
+            <div class="home-services-list">
+              <p class="heading-alt-h5">Figma</p>
+              <p class="heading-alt-h5">Usability Testing</p>
+              <p class="heading-alt-h5">Wireframing</p>
+              <p class="heading-alt-h5">UI/UX Audits</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- EMAIL DESIGN -->
+      <div class="home-services-item odd">
+        <div class="home-services-item-content">
+          <div class="margin-bottom margin-large">
+            <div class="margin-bottom margin-tiny">
+              <div class="overflow-hidden">
+                <h3 class="heading-style-small">Email design</h3>
+              </div>
+            </div>
+            <div class="max-width-large">
+              <p class="heading-alt-h3">Custom &amp; responsive websites that engage users and drive conversions.</p>
+            </div>
+          </div>
+          <div>
+            <div class="margin-bottom margin-medium">
+              <div class="text-meta text-color-muted">(Email Services)</div>
+            </div>
+            <div class="home-services-list">
+              <p class="heading-alt-h5">Figma</p>
+              <p class="heading-alt-h5">Klaviyo</p>
+              <p class="heading-alt-h5">Shopify</p>
+              <p class="heading-alt-h5">Photoshop</p>
+            </div>
+          </div>
+        </div>
+        <div class="home-services-item-image">
+          <img src="https://cdn.prod.website-files.com/68599ae5116bfda9c17727ac/689a80a15f10b54db1d99e2b_68599ae5116bfda9c17729c0_service-02%201.jpg" loading="lazy" alt="Polarpro Email Design" class="image-cover-parallax"
+            srcset="https://cdn.prod.website-files.com/68599ae5116bfda9c17727ac/689a80a15f10b54db1d99e2b_68599ae5116bfda9c17729c0_service-02%201-p-500.jpg 500w, https://cdn.prod.website-files.com/68599ae5116bfda9c17727ac/689a80a15f10b54db1d99e2b_68599ae5116bfda9c17729c0_service-02%201-p-800.jpg 800w, https://cdn.prod.website-files.com/68599ae5116bfda9c17727ac/689a80a15f10b54db1d99e2b_68599ae5116bfda9c17729c0_service-02%201-p-1080.jpg 1080w, https://cdn.prod.website-files.com/68599ae5116bfda9c17727ac/689a80a15f10b54db1d99e2b_68599ae5116bfda9c17729c0_service-02%201.jpg 1600w"
+            sizes="(max-width: 1600px) 100vw, 1600px">
+        </div>
+      </div>
+
+    </section>
+
+  </main><!-- /main -->
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-bottom">
+      <div class="footer-nav">
+        <div class="footer-column">
+          <div class="text-meta-small text-color-muted-inverse">(Socials)</div>
+          <nav class="nav center-phone-landscape">
+            <a href="https://www.linkedin.com/in/jmadridart/" target="_blank" rel="noopener" class="nav-item inverse w-inline-block">
+              <div class="nav-item-text">Linkedin</div>
+              <div class="nav-item-line inverse"></div>
+            </a>
+            <a href="https://www.instagram.com/jmadridart/" target="_blank" rel="noopener" class="nav-item inverse w-inline-block">
+              <div class="nav-item-text">Instagram</div>
+              <div class="nav-item-line inverse"></div>
+            </a>
+            <a href="https://jmadridphoto.mypixieset.com/" target="_blank" rel="noopener" class="nav-item inverse w-inline-block">
+              <div class="nav-item-text">Photography</div>
+              <div class="nav-item-line inverse"></div>
+            </a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-bottom-grid">
+        <div class="text-meta">JOSH MADRID 2026</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- COLOR TOGGLE -->
+  <div class="toggle-color">
+    <div class="toggle-color-dot"></div>
+  </div>
+
+  <!-- PAGE LOADER -->
+  <div class="pageloader">
+    <div class="overflow-hidden">
+      <div class="pageloader-heading">JOSH MADRID PORTFOLIO</div>
+    </div>
+  </div>
+
+</div><!-- /page-wrapper -->
+
+<script src="js/main.js"></script>
+</body>
+</html>
