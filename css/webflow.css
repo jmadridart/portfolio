@@ -227,6 +227,7 @@ h3 { font-family: var(--global--heading-font-family); text-transform: uppercase;
 .background-video-2 {
   box-sizing: border-box;
   width: 100%;
+  grid-column: 1 / -1;
   height: 0;
   padding-top: 56.25%; /* 16:9 */
   position: relative;
@@ -271,7 +272,7 @@ h3 { font-family: var(--global--heading-font-family); text-transform: uppercase;
 .background-video-2:hover .w-background-video--control,
 .background-video-3:hover .w-background-video--control { opacity: 1; }
 .w-background-video--control img { width: 16px; height: 16px; filter: invert(1); }
-.container-2 { width: 100%; padding: 0 6vw 6vw; }
+.container-2 { width: 100%; padding: 0 6vw 6vw; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; align-items: start; }
 
 /* ABOUT PAGE */
 .section-studio-hero .studio-hero-top { padding: 12vw 6vw 4vw; }
