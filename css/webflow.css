@@ -159,7 +159,7 @@ h3 { font-family: var(--global--heading-font-family); text-transform: uppercase;
 .home-hero-image { object-fit: cover; width: 100%; height: 100vh; position: sticky; top: 0; }
 .home-hero-right { display: flex; flex-flow: column; }
 .home-hero-right-top { display: flex; flex-flow: column; justify-content: space-between; height: 100vh; padding: 10vw 6vw 4vw; }
-.home-hero-right-bottom { display: flex; flex-flow: column; justify-content: space-between; padding: 6vw 6vw 8vw; }
+.home-hero-right-bottom { display: flex; flex-flow: column; justify-content: space-between; padding: 6vw 6vw 8vw 6vw; }
 
 /* HOME PROJECTS */
 .section-home-projects { background-color: var(--global-colors--background-muted); position: relative; }
@@ -328,7 +328,7 @@ h3 { font-family: var(--global--heading-font-family); text-transform: uppercase;
 .header-small .dark-mode { display: block; }
 
 /* Bio paragraph flush left */
-.home-hero-right-bottom p { padding-left: 0 !important; }
+.home-hero-right-bottom p { padding-left: 0 !important; margin-left: 0 !important; }
 .home-hero-right-top .heading-alt-h2 { padding-left: 0; }
 
 /* ===== RESPONSIVE ===== */
