@@ -81,7 +81,7 @@ h3 { font-family: var(--global--heading-font-family); text-transform: uppercase;
 .heading-alt-small { font-family: var(--global--body-font-family); text-transform: none; font-size: 5vw; font-weight: 600; line-height: 110%; }
 
 .text-meta { font-family: var(--text-meta--font-family); font-size: var(--text-meta--font-size); letter-spacing: var(--text-meta--letter-spacing); font-style: italic; font-weight: 500; line-height: 130%; }
-.text-color-muted { color: var(--global-colors--text-muted); padding-top: 12px; padding-bottom: 35px; text-decoration: none; }
+.text-color-muted { color: var(--global-colors--text-muted); padding-top: 12px; padding-bottom: 35px; padding-left: 0; text-decoration: none; }
 .text-color-muted-inverse { color: var(--global-colors--text-muted-inverse); }
 .text-rich-text { font-size: 18px; line-height: 180%; }
 .text-rich-text.text-color-muted p { color: var(--global-colors--text-muted); }
@@ -319,6 +319,17 @@ h3 { font-family: var(--global--heading-font-family); text-transform: uppercase;
 .toggle-color { z-index: 999; background-color: var(--global-colors--background-primary-muted); cursor: pointer; border-radius: 500px; display: flex; justify-content: flex-start; align-items: center; width: 70px; height: 40px; padding: 10px; position: fixed; bottom: 2rem; left: 2rem; }
 .toggle-color-dot { background-color: var(--global-colors--background-default); border-radius: 50%; width: 20px; height: 20px; }
 .dark-mode { display: none; }
+
+/* NAV LOGO — large fixed header is on white: black logo */
+.show-tablet .light-mode { display: block; }
+.show-tablet .dark-mode { display: none; }
+/* header-small is absolute over dark image: white logo */
+.header-small .light-mode { display: none; }
+.header-small .dark-mode { display: block; }
+
+/* Bio paragraph flush left */
+.home-hero-right-bottom p { padding-left: 0 !important; }
+.home-hero-right-top .heading-alt-h2 { padding-left: 0; }
 
 /* ===== RESPONSIVE ===== */
 @media screen and (min-width: 1440px) {
