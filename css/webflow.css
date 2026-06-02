@@ -92,12 +92,12 @@ h3 { font-family: var(--global--heading-font-family); text-transform: uppercase;
 
 /* MARGINS */
 .margin-bottom { margin-top: 0; margin-left: 0; margin-right: 0; }
-.margin-large { margin: 3rem; }
-.margin-medium { margin: 2rem; }
-.margin-small { margin: 1rem; }
-.margin-tiny { margin: .125rem; }
-.margin-xsmall { margin: .5rem; }
-.margin-xxsmall { margin: .25rem; }
+.margin-large { margin-bottom: 3rem; margin-top: 0; margin-left: 0; margin-right: 0; }
+.margin-medium { margin-bottom: 2rem; margin-top: 0; margin-left: 0; margin-right: 0; }
+.margin-small { margin-bottom: 1rem; margin-top: 0; margin-left: 0; margin-right: 0; }
+.margin-tiny { margin-bottom: .125rem; margin-top: 0; margin-left: 0; margin-right: 0; }
+.margin-xsmall { margin-bottom: .5rem; margin-top: 0; margin-left: 0; margin-right: 0; }
+.margin-xxsmall { margin-bottom: .25rem; margin-top: 0; margin-left: 0; margin-right: 0; }
 .margin-xhuge { margin-bottom: 8rem; margin-top: 0; margin-left: 0; margin-right: 0; }
 
 /* HEADER - large (show-tablet wrapper) */
