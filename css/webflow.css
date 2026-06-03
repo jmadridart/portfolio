@@ -426,6 +426,7 @@ h3 { font-family: var(--global--heading-font-family); text-transform: uppercase;
   .service-item-content { padding: 3rem 2.5rem; }
   .container-2 { padding: 0 2.5rem 3rem; }
 }
+.navbar-small-right .mobile-menu-toggle { display: flex !important; }
 
 @media screen and (max-width: 479px) {
   .navbar-small { padding: 1rem 2rem; }
