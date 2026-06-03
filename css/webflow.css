@@ -122,6 +122,10 @@ h3 { font-family: var(--global--heading-font-family); text-transform: uppercase;
 .navbar-small-left { display: flex; align-items: center; gap: 3rem; position: relative; }
 .navbar-small-right { display: flex; align-items: center; justify-content: space-between; padding-left: 6vw; gap: 1rem; }
 .navbar-small-menu { display: flex; align-items: center; gap: 1.5rem; }
+.header-small .light-mode { display: none; }
+.header-small .dark-mode { display: block; }
+.header-small.light-bg .light-mode { display: block; }
+.header-small.light-bg .dark-mode { display: none; }
 
 /* BUTTON TEXT (Contact) */
 .button-text { font-family: var(--button-text--font-family); color: var(--button-text-default--text-color); font-size: var(--button-text--font-size); font-weight: 600; line-height: 120%; text-decoration: none; display: inline-block; position: relative; }
