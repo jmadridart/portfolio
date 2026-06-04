@@ -320,7 +320,7 @@ h3 { font-family: var(--global--heading-font-family); text-transform: uppercase;
 .nav-item:hover .nav-item-line { width: calc(100% - 4px); }
 
 /* TOGGLE */
-.toggle-color { z-index: 999; background-color: var(--global-colors--background-primary-muted); cursor: pointer; border-radius: 500px; display: flex; justify-content: flex-start; align-items: center; width: 70px; height: 40px; padding: 10px; position: fixed; bottom: 2rem; left: 2rem; }
+.toggle-color { display: none; z-index: 999; background-color: background-color: var(--global-colors--background-primary-muted); cursor: pointer; border-radius: 500px; display: flex; justify-content: flex-start; align-items: center; width: 70px; height: 40px; padding: 10px; position: fixed; bottom: 2rem; left: 2rem; }
 .toggle-color-dot { background-color: var(--global-colors--background-default); border-radius: 50%; width: 20px; height: 20px; }
 .dark-mode { display: none; }
 
