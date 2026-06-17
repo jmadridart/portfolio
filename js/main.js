@@ -14,6 +14,22 @@ document.addEventListener('DOMContentLoaded', () => {
   if (mobileMenu) mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', close));
   function close() { if (mobileMenu) mobileMenu.classList.remove('open'); document.body.style.overflow = ''; }
 
+  // SCROLL HIDE/SHOW NAV (mobile)
+  let lastScroll = 0;
+  const headerSmall = document.querySelector('.header-small');
+  if (headerSmall) {
+    headerSmall.style.transition = 'transform 0.3s ease';
+    window.addEventListener('scroll', () => {
+      const current = window.scrollY;
+      if (current > lastScroll && current > 80) {
+        headerSmall.style.transform = 'translateY(-100%)';
+      } else {
+        headerSmall.style.transform = 'translateY(0)';
+      }
+      lastScroll = current <= 0 ? 0 : current;
+    }, { passive: true });
+  }
+
   // PARALLAX (light)
   if (window.innerWidth > 991) {
     window.addEventListener('scroll', () => {
